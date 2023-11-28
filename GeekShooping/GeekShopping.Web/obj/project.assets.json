@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\KaioSantos\\.nuget\\packages\\": {}
+    "C:\\Users\\Kaiohvs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
       "projectName": "GeekShopping.Web",
-      "projectPath": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
-      "packagesPath": "C:\\Users\\KaioSantos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\obj\\",
+      "projectPath": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+      "packagesPath": "C:\\Users\\Kaiohvs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KaioSantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kaiohvs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

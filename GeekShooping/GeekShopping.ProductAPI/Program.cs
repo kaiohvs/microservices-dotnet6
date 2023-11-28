@@ -1,26 +1,37 @@
+using AutoMapper;
+using GeekShopping.ProductAPI.Config;
 using GeekShopping.ProductAPI.Model.Context;
+using GeekShopping.ProductAPI.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connection = builder.Configuration.GetConnectionString("SqlConnectionString");
-builder.Services.AddDbContext<SqlContext>(options =>
+//Conection bank
+builder.Services.AddDbContext<SqlContext>(opt =>
 {
-    options.UseSqlServer(connection);
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
 });
 
-// Add services to the container.
+//Created config autoMapper
+var mapperConfig = new MapperConfiguration(mp =>
+{
+    mp.AddProfile(new MappingProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("V1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "GeekShopping", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "GeekShopping.ProductAPI", Version = "v1" });
 });
+// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
-
-
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 var app = builder.Build();
 
@@ -28,9 +39,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c=> c.SwaggerEndpoint("/swagger/v1/swagger.json", "GeekShopping V1"));
 }
+
 
 app.UseHttpsRedirection();
 

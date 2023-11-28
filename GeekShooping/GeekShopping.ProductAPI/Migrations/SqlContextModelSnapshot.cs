@@ -61,6 +61,80 @@ namespace GeekShopping.ProductAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2L,
+                            CatagoryName = "Camisa",
+                            Description = "Uma linda camisa do jurassipark preta com vermelho",
+                            ImageUrl = "Test",
+                            Name = "Camisa JurassyPark",
+                            Price = 69.799999999999997
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            CatagoryName = "Capacete",
+                            Description = "Uma capacete do dart veider pequeno da cor preta",
+                            ImageUrl = "Test",
+                            Name = "Capacete dart veider",
+                            Price = 169.80000000000001
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            CatagoryName = "Boneco",
+                            Description = "Um boneco de 1.10 branco do tropper storm",
+                            ImageUrl = "Test",
+                            Name = "Boneco storm",
+                            Price = 269.80000000000001
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            CatagoryName = "Camisa",
+                            Description = "Uma linda camisa gamer preta",
+                            ImageUrl = "Test",
+                            Name = "Camisa gamer",
+                            Price = 69.799999999999997
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            CatagoryName = "Camisa",
+                            Description = "Uma linda camisa da spacex branca com a manga azul",
+                            ImageUrl = "Test",
+                            Name = "Camisa spacex",
+                            Price = 69.799999999999997
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            CatagoryName = "Camisa",
+                            Description = "Uma linda camisa da coffer amarelada",
+                            ImageUrl = "Test",
+                            Name = "Camisa coffer",
+                            Price = 69.799999999999997
+                        },
+                        new
+                        {
+                            Id = 8L,
+                            CatagoryName = "Moleton",
+                            Description = "Um lindo moletom preto da serie cobra kay",
+                            ImageUrl = "Test",
+                            Name = "Moletom cobra kay",
+                            Price = 100.0
+                        },
+                        new
+                        {
+                            Id = 9L,
+                            CatagoryName = "Camisa",
+                            Description = "Uma linda camisa do jurassipark preta com vermelho",
+                            ImageUrl = "Test",
+                            Name = "filme stall tack",
+                            Price = 69.799999999999997
+                        });
                 });
 #pragma warning restore 612, 618
         }

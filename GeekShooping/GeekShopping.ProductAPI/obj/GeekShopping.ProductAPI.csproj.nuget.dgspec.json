@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
+    "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
+    "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
         "projectName": "GeekShopping.ProductAPI",
-        "projectPath": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
-        "packagesPath": "C:\\Users\\KaioSantos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KaioSantos\\source\\estudos\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\obj\\",
+        "projectPath": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
+        "packagesPath": "C:\\Users\\Kaiohvs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kaiohvs\\Documents\\Curso de Microservicos\\microservices-dotnet6\\GeekShooping\\GeekShopping.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KaioSantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kaiohvs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[6.0.24, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -94,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
